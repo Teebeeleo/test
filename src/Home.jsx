@@ -55,7 +55,7 @@ function Home() {
           </div>
         </div>
         <div className="">
-          <p className="border w-85 flex items-center p-2 ml-200 mt-1 gap-2">
+          <p className="border w-85 flex items-center p-2 ml-8 lg:ml-200 mt-30 lg:mt-1 gap-2">
             {" "}
             <span className="inline-block w-5 h-5 bg-[#b36ec7] text-center"></span>
             Ready to work on your project
@@ -67,7 +67,7 @@ function Home() {
               With great power comes great electricity bills
             </p>
 
-            <p className="md:text-[21px] text-[15px] b border sm:ml-124.5 sm:p-3 p-1 border-[#898f9a] max-sm:w-25 max-sm:ml-62.5">
+            <p className="md:text-[21px] text-[15px] b border sm:ml-124.5 sm:p-3 p-1 border-[#898f9a] lg:w-32  w-[25.5%] ml-67 lg:ml-l62.5">
               -Dr. Who
             </p>
           </div>
