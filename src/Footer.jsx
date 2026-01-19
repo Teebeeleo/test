@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "./assets/logo.png";
+import Logo from "./assets/Logo.png";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
