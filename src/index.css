@@ -1,0 +1,7 @@
+@import "tailwindcss";
+body {
+  font-family: "JetBrains Mono", monospace;
+  background-color: #282c33;
+  color: white;
+  overflow-x: hidden;
+}
