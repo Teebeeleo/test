@@ -19,7 +19,7 @@ function Work() {
             <h1 className="text-[18px]">
               <span className="text-[#b36ec7] ">/</span>projects
             </h1>
-            <p className="pt-2 text-[12px] ">list of my projects</p>
+            <p className="pt-2 text-[12px] ">list of my projects.</p>
           </div>
           <div>
             <h1 className="text-[18px] pt-10">
