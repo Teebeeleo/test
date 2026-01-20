@@ -8,8 +8,8 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Home />
-      {/* <Work /> */}
+      {/* <Home />/ */}
+      <Work />
     </>
   );
 }

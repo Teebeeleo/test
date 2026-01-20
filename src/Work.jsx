@@ -1,16 +1,50 @@
 import React from "react";
 import Layout from "./Layout";
 import Port from "./assets/Port.png";
+import Projectcard from "./Projectcard";
 
 function Work() {
-  const projectlist =[
+  const projectlist = [
     {
-      image:{Port}
+      image: Port,
+
+      language: "React,Tailwind css",
+
+      title: "my portfololio",
+
+      description: "A responsive portfolio",
+
+      button1: "live",
+
+      button2: "Git",
     },
     {
-      language:"HTML,T"
+      image: Port,
+
+      language: "React,Tailwind css",
+
+      title: "my portfololio",
+
+      description: "A responsive portfolio",
+
+      button1: "live",
+
+      button2: "Git",
+    },
+    {
+      image: Port,
+
+      language: "React,Tailwind css",
+
+      title: "my portfololio",
+
+      description: "A responsive portfolio",
+
+      button1: "live",
+
+      button2: "Git",
     }
-  ]
+  ];
   return (
     <>
       <Layout>
@@ -27,7 +61,11 @@ function Work() {
             </h1>
           </div>
         </div>
-        
+        <div className="grid grid-cols-1  lg:grid-cols-3 sm:mx-32 mx-12">
+          {projectlist.map((project, index) => (
+            <Projectcard key={index} Project={project}  />
+          ))}
+        </div>
       </Layout>
     </>
   );
