@@ -4,12 +4,14 @@ import viteLogo from "/vite.svg";
 import Work from "./Work";
 import Home from "./Home";
 import "./App.css";
+import Aboutme from "./assets/Aboutme";
 
 function App() {
   return (
     <>
-      {/* <Home />/ */}
+      {/* <Home /> */}
       <Work />
+      {/* <Aboutme /> */}
     </>
   );
 }

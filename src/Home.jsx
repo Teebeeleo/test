@@ -79,7 +79,7 @@ function Home() {
           </span>
         </div>
 
-        <p className="mt-20 "></p>
+        
       </Layout>
     </>
   );

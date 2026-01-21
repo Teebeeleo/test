@@ -4,7 +4,7 @@ const Projectcard = ({ Project }) => {
   const { image, language, title, description, button1, button2 } = Project;
   return (
     <>
-      <div className="-mt-35     mb-50">
+      <div className="-mt-40     mb-20">
         <div className="border pb-5 w-70 lg:w-70 sm:w-120 ">
           <div className="lg:w-70 w-70 sm:w-120">
             <img src={image} alt="" />
