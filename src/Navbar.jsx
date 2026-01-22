@@ -21,7 +21,7 @@ function Navbar() {
           } absolute top-full right-0 sm:relative sm:flex gap-5 md:text-[20px] lg:text-[16px] `}
         >
           {NavItems.map((item, index) => (
-            <li key={index} className="text-[#9299a5] ">
+            <li key={index} className="text-[#9299a5] nav-link">
               <a href="">{item}</a>
             </li>
           ))}

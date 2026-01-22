@@ -5,3 +5,20 @@ body {
   color: white;
   overflow-x: hidden;
 }
+.nav-link{
+  position: relative;
+
+}
+.nav-link::after{
+  content:"" ;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #9299a5 ;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after{
+  width: 100%;
+}
