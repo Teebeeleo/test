@@ -11,10 +11,11 @@ import Aboutme from "./assets/Aboutme";
 function App() {
   return (
     <>
-      {/* <Home /> */}
+      
+      <Home />
       {/* <Work /> */}
       {/* <Aboutme /> */}
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 }
