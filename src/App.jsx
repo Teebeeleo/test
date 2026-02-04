@@ -6,16 +6,20 @@ import Home from "./Home";
 import "./App.css";
 import Contact from "./assets/Contact";
 import Aboutme from "./assets/Aboutme";
+import { BrowserRouter, Route, Routes,Link } from "react-router-dom";
 
 
 function App() {
   return (
     <>
-      
-      <Home />
-      {/* <Work /> */}
-      {/* <Aboutme /> */}
-      {/* <Contact /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/aboutme" element={<Aboutme />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
