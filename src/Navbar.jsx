@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import Logo from "./assets/Logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const NavItems = ["home", "works", "about-me", "contact", "EN"];
+  const NavItems = [
+    { name: "home", path: "/" },
+    { name: "work", path:"/work"},
+    {name:"about-me",path:"/about-me"},
+    {name:"contact",path:"/contact"},
+    "EN",
+  ];
   const [isOpen, setIsopen] = useState(false);
   return (
     <div className="">
@@ -22,7 +29,8 @@ function Navbar() {
         >
           {NavItems.map((item, index) => (
             <li key={index} className="text-[#9299a5] nav-link">
-              <a href="">{item}</a>
+              {typeof item==="string" ?(<span className="cursor-pointer">{item}</span>):(<Link to={item.path}>{item.name}</Link>)}
+              
             </li>
           ))}
         </ul>
