@@ -21,7 +21,7 @@ function Navbar() {
             Tee~Bee
           </h2>
         </div>
-
+        
         <ul
           className={`${
             isOpen ? "block" : "hidden"
