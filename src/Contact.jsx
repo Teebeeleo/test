@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useRef } from "react";
-import Layout from "../Layout";
+import Layout from "./Layout";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";

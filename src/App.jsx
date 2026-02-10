@@ -4,9 +4,10 @@ import viteLogo from "/vite.svg";
 import Work from "./Work";
 import Home from "./Home";
 import "./App.css";
-import Contact from "./assets/Contact";
-import Aboutme from "./assets/Aboutme";
+
 import { BrowserRouter, Route, Routes,Link } from "react-router-dom";
+import Aboutme from "./Aboutme";
+import Contact from "./Contact";
 
 
 function App() {

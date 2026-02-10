@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../Layout";
-import CareerCard from "./Careercard";
+import Layout from "./Layout";
+import CareerCard from "./CareerCard";
 
 function Aboutme() {
   const careerJourney = [
