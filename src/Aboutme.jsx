@@ -56,7 +56,7 @@ function Aboutme() {
         "Developing a fintech application",
         "Designing secure APIs",
         "Building a user-friendly React frontend",
-      ],
+      ],                            
     },
   ];
 

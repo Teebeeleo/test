@@ -2,7 +2,14 @@ import React from "react";
 
 const CareerCard = ({ year, title, points }) => {
   return (
-    <div className="relative  border border-[#2a2f3a] rounded-xl p-6 hover:border-[#b36ec7] transition duration-300">
+    <div
+      className="relative border border-[#2a2f3a] rounded-xl max-sm:border-[#b36ec7] p-6 
+           transition duration-300 
+           hover:drop-shadow-[0_4px_6px_rgba(179,110,199,0.3)] 
+          max-sm:drop-shadow-[0_2px_5px_rgba(179,110,199,0.3)] 
+           
+           hover:border-[#b36ec7]"
+    >
       <span className="absolute -top-3 right-4 bg-[#282c33] px-3 text-xs text-[#b36ec7]">
         {year}
       </span>
