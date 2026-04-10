@@ -8,12 +8,12 @@ import "./App.css";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Aboutme from "./Aboutme";
 import Contact from "./Contact";
-import langProvider from "./CreateContext";
+
 
 function App() {
   return (
     <>
-      <langProvider>
+      
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
-      </langProvider>
+      
     </>
   );
 }
