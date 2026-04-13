@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Logo from "./assets/Logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const NavItems = [
     { name: "home", path: "/" },
-    { name: "work", path:"/work"},
-    {name:"about-me",path:"/about-me"},
-    {name:"contact",path:"/contact"},
+    { name: "work", path: "/work" },
+    { name: "about-me", path: "/about-me" },
+    { name: "contact", path: "/contact" },
     "EN",
   ];
   const [isOpen, setIsopen] = useState(false);
@@ -21,7 +21,7 @@ function Navbar() {
             Tee~Bee
           </h2>
         </div>
-        
+
         <ul
           className={`${
             isOpen ? "block" : "hidden"
@@ -29,8 +29,20 @@ function Navbar() {
         >
           {NavItems.map((item, index) => (
             <li key={index} className="text-[#9299a5] nav-link">
-              {typeof item==="string" ?(<span className="cursor-pointer">{item}</span>):(<Link to={item.path}>{item.name}</Link>)}
-              
+              {typeof item === "string" ? (
+                <span className="cursor-pointer">{item}</span>
+              ) : (
+                <NavLink
+                  to={item.path}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#b36ec7] font-[15px]  "
+                      : "text-[#9299a5] hover:text-[#b36ec7]"
+                  }
+                >
+                  {item.name}
+                </NavLink>
+              )}
             </li>
           ))}
         </ul>
